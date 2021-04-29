@@ -42,19 +42,21 @@ so taking the first turn gives a non-negligible advantage (which is not too surp
 
 The computer playing strengths (from 29/04/2021) are in the following order:
 
-E << A < B < C
+R << A < B < C
 
-from weakest to strongest.
+from weakest to strongest. This relationship was found using game mode 4 with 100,000 trials.
+
+N.B. all difficulty levels seem to be quite hard to beat as a human.
 
 -------------
 
-E chooses a random number of dice to roll each turn
+R chooses a random number of dice to roll each turn
 
 A always rolls 5 times, which is the optimal number strategy[1]
 
 B always rolls until it has a score of 20 or more in its turn, which is the optimal score strategy[1]
 
-C is like B, but reduces it's requirement as it approaches a total score of 100, so it does not need to overshoot the target score[2]
+C is like B, but reduces its turn score requirement as it approaches a total score of 100, so it does not need to overshoot the target score[2]
 
 
 [1] according to the Numberphile video linked above.
