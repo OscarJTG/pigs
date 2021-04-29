@@ -21,27 +21,42 @@ Play continues until one player manages to bank a total score of at least 100 - 
 
 There are five game modes:
 
-[0] - player vs player
+(0) - player vs player
 
-[1] - player vs computer
+(1) - player vs computer
 
-[2] - computer vs player
+(2) - computer vs player
 
-[3] - computer vs computer
+(3) - computer vs computer
 
-[4] - rapid computer vs computer
+(4) - rapid computer vs computer
 
 ------------
 
-Game modes [0] through to [3] print the results of each turn and have some delays added to inrease suspense before each "dice" roll.
+Game modes 0 through to 3 print the results of each turn and have some delays added to inrease suspense before each "dice" roll.
 
-[4] suppresses the output and has no delays, so that thousands of games can be played by the computers, to test which uses the best strategy.
+Game mode 4 suppresses the output and has no delays, so that thousands of games can be played by the computers, to test which uses the best strategy.
 
 By playing the same computer against itself 100,000 times, I found that Player 1 wins about 6.5% more games than player 2,
-so being the first player confers a non-negligible advantage (which is not too surprising).
+so taking the first turn gives a non-negligible advantage (which is not too surprising).
 
 The computer playing strengths (from 29/04/2021) are in the following order:
 
 E << A < B < C
 
 from weakest to strongest.
+
+-------------
+
+E chooses a random number of dice to roll each turn
+
+A always rolls 5 times, which is the optimal number strategy[1]
+
+B always rolls until it has a score of 20 or more in its turn, which is the optimal score strategy[1]
+
+C is like B, but reduces it's requirement as it approaches a total score of 100, so it does not need to overshoot the target score[2]
+
+
+[1] according to the Numberphile video linked above.
+
+[2] (this beat B in 100,000 trials by about 15% as player 1 and 2% as player 2).
