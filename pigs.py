@@ -248,7 +248,7 @@ def computerTurn(difficulty, score, p=1):
 		return computerTurnB(p)
 	if difficulty == "A":
 		return computerTurnA(p)
-	if difficulty == "E":
+	if difficulty == "R":
 		return computerTurnRandom(p)
 
 
