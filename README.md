@@ -20,8 +20,8 @@ After that comes the other player's turn, which proceeds in the same way.
 The player's total score is the sum of all the points that the player had at 
 the end of their turn.
 
-Play continues until one player banks a total score of at least 100
- - then this player wins!
+Play continues until one player banks a total score of at least 100 -- then 
+this player wins!
 
 ## Information about the Python script
 
@@ -67,5 +67,5 @@ C             | Same strategy as B, but reduces its turn score requirement as it
 [video](https://www.youtube.com/watch?v=ULhRLGzoXQ0).
 
 [2] Computer mode C was tested against B over 100,000 trials. The scores were
-roughly 57.5:42.5 for C vs B and 49:51 for B vs C, demosntrating that 
+roughly 57.5:42.5 for C vs B and 49:51 for B vs C, demonstrating that 
 strategy C is an improvement over strategy B.
