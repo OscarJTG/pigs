@@ -3,18 +3,14 @@ import random
 import time
 import os
 import sys
+
 if __name__ == "__main__":
 	cwd = os.getcwd()
 else:
 	cwd = os.path.dirname(__file__)
 sys.path.insert(0, cwd)
 import game
-
-
-def print_roll(roll_counter, r, print_):
-	if print_ is True:
-		print(f"Roll #{roll_counter}: {r}.")
-		time.sleep(0.2)
+import printouts
 
 
 def number_strategy(print_=True):
@@ -30,7 +26,7 @@ def number_strategy(print_=True):
 	r = game.roll()
 	roll_counter = roll_counter + 1
 	cumulative_score = cumulative_score + r
-	print_roll(roll_counter, r, print_)
+	printouts.print_roll(roll_counter, r, print_)
 	if r == 1:
 		if print_ is True:
 			print("Sorry, zero points this turn. Better luck next time!")
@@ -40,7 +36,7 @@ def number_strategy(print_=True):
 		r = game.roll()
 		roll_counter = roll_counter + 1
 		cumulative_score = cumulative_score + r
-		print_roll(roll_counter, r, print_)
+		printouts.print_roll(roll_counter, r, print_)
 		if r == 1:
 			if print_ is True:
 				print("Sorry, zero points this turn.")
@@ -67,7 +63,7 @@ def score_strategy(print_=True):
 	r = game.roll()
 	roll_counter = roll_counter + 1
 	cumulative_score = cumulative_score + r
-	print_roll(roll_counter, r, print_)
+	printouts.print_roll(roll_counter, r, print_)
 	if r == 1:
 		if print_ is True:
 			print("Sorry, zero points this turn. Better luck next time!")
@@ -107,7 +103,7 @@ def score_strategy_improved(target_score, print_=True):
 	r = game.roll()
 	roll_counter = roll_counter + 1
 	cumulative_score = cumulative_score + r
-	print_roll(roll_counter, r, print_)
+	printouts.print_roll(roll_counter, r, print_)
 	if r == 1:
 		if print_ is True:
 			print("Sorry, zero points this turn. Better luck next time!")
@@ -121,7 +117,7 @@ def score_strategy_improved(target_score, print_=True):
 		r = game.roll()
 		roll_counter = roll_counter + 1
 		cumulative_score = cumulative_score + r
-		print_roll(roll_counter, r, print_)
+		printouts.print_roll(roll_counter, r, print_)
 		if r == 1:
 			if print_ is True:
 				print("Sorry, zero points this turn.")
@@ -147,7 +143,7 @@ def random_play(print_=True):
 	r = game.roll()
 	roll_counter = roll_counter + 1
 	cumulative_score = cumulative_score + r
-	print_roll(roll_counter, r, print_)
+	printouts.print_roll(roll_counter, r, print_)
 	if r == 1:
 		if print_ is True:
 			print("Sorry, zero points this turn. Better luck next time!")
@@ -160,7 +156,7 @@ def random_play(print_=True):
 		r = game.roll()
 		roll_counter = roll_counter + 1
 		cumulative_score = cumulative_score + r
-		print_roll(roll_counter, r, print_)
+		printouts.print_roll(roll_counter, r, print_)
 		if r == 1:
 			if print_ is True:
 				print("Sorry, zero points this turn.")
