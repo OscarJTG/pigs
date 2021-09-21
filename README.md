@@ -25,6 +25,8 @@ this player wins!
 
 ## Information about the Python script
 
+Run the script called `pigs.py` using Python 3.
+
 There are five game modes:
 
 Mode | Description
