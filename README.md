@@ -37,8 +37,8 @@ Mode | Description
 (3)  | computer vs computer
 (4)  | rapid computer vs computer
 
-Game modes 0 through to 3 print the results of each turn and have some delays 
-added to inrease suspense before each "dice" roll.
+Game modes 0 through to 3 print the results of each turn and introduce some 
+short delays to increase the suspense before each roll.
 
 Game mode 4 suppresses the output and has no delays, so that thousands of 
 games can be played by the computers, to test which uses the best strategy.
